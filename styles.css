@@ -261,7 +261,7 @@ nav.scrolled {
   border-bottom: 1px solid var(--rule);
 }
 .services-layout { display: grid; grid-template-columns: 1fr 2fr; gap: 5rem; align-items: start; }
-.services-left { position: sticky; top: 100px; }
+.services-left { position: sticky; top: 100px; z-index: 10; }
 .services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
 .service-item {
   padding: 2rem;
@@ -352,10 +352,12 @@ nav.scrolled {
 .equip-card.visible { opacity: 1; transform: translateY(0); }
 .equip-card:hover { background: var(--page-2); z-index: 2; }
 .equip-img-wrap {
-  aspect-ratio: 1 / 1; overflow: hidden;
+  aspect-ratio: 1 / 1; 
+  min-height: 250px; /* Fallback */
+  overflow: hidden;
   border-bottom: 1px solid var(--rule);
   display: flex; align-items: center; justify-content: center;
-  background: var(--page-2);
+  background: #eeeeee; /* Visible placeholder background */
 }
 .equip-img-wrap img {
   width: 100%; height: 100%; object-fit: contain;
@@ -537,11 +539,27 @@ footer {
   .equip-grid { grid-template-columns: repeat(2,1fr); }
   .nav-links, .nav-cta { display: none; }
   .hamburger { display: flex; }
+  
+  /* Reset sticky positioning on mobile to prevent overlapping */
+  .services-left, .why-left, .about-left, .about-pull, .equip-header { 
+      position: static !important; 
+      transform: none !important;
+      width: auto !important;
+      margin-bottom: 2rem !important;
+  }
+  
+  .service-item, .equip-card {
+      position: relative;
+      z-index: 1;
+  }
 }
 @media (max-width: 600px) {
   #hero, .hero-premium { padding-top: 100px; }
   .equip-grid, .footer-top, .services-grid { grid-template-columns: 1fr; }
   .hero-title { font-size: 2.8rem; }
+  
+  /* Improve spacing for stacked layout */
+  .services-left { margin-bottom: 2rem; }
 }
 
 /* Lucide Icon Styling */
@@ -558,8 +576,9 @@ footer {
 .leader-image-wrap {
     width: 100%;
     aspect-ratio: 3 / 4;
+    min-height: 400px; /* Fallback for browsers without aspect-ratio support */
     overflow: hidden;
-    background: var(--page-2);
+    background: #eeeeee; /* Visible placeholder background */
     margin-bottom: 1.5rem;
     border: 1px solid var(--rule);
 }
