@@ -4,159 +4,204 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | Dewise Drink Solutions</title>
-    <meta name="description" content="Learn more about Dewise Drink Solutions, our mission, values, and expertise in beverage innovation.">
+    <meta name="description" content="Learn about our mission, leadership, and achievements in the beverage industry. From Chikoo wine to global consulting.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header/Navigation -->
-    <header>
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="logo">
-                    <a href="index.html">DEWISE</a>
-                </div>
-                <div class="nav-menu" id="nav-menu">
-                    <a href="index.html" class="nav-link">Home</a>
-                    <a href="about.html" class="nav-link active">About</a>
-                    <a href="services.html" class="nav-link">Services</a>
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </div>
-                <div class="hamburger" id="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div>
-        </nav>
-    </header>
 
-    <!-- About Hero Section -->
-    <section class="hero" style="padding: 120px 0 80px; min-height: auto;">
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" class="nav-logo">DEWISE<span>Drink Solutions</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="nav-cta">Inquire Now</a>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" style="min-height: 60vh;">
+        <div class="hero-ruled-lines"></div>
         <div class="container">
-            <div class="hero-content">
-                <h1>About Dewise Drink Solutions</h1>
-                <p>Specializing in comprehensive beverage solutions with expertise from concept to commercialization.</p>
+            <div class="hero-tag">
+                <div class="hero-tag-dot"></div>
+                Our Story
+            </div>
+            <h1 class="hero-title">
+                Driven by <em>Innovation</em><br>
+                and <span class="sketch-underline">Excellence
+                    <svg viewBox="0 0 400 12"><path d="M4,8 c100,0 200,-4 392,-2" /></svg>
+                </span>
+            </h1>
+        </div>
+    </section>
+
+    <!-- Mission & Values -->
+    <section id="about" class="reveal">
+        <div class="about-pull">
+            Our mission is to guide clients through every stage of beverage creation, from <em>initial concept</em> to the <em>final bottled</em> product.
+        </div>
+        <div class="about-body">
+            <p>Dewise Drink Solutions is a consulting and trading firm specializing in providing comprehensive beverage solutions. With a strong foundation in the industry, we deliver tailored solutions that meet unique client needs.</p>
+            <div class="about-pillars">
+                <div class="pillar-row">
+                    <span class="pillar-icon"><i data-lucide="sparkles"></i></span>
+                    <div class="pillar-text"><strong>Innovation</strong>Creating unique and market-leading beverage concepts.</div>
+                </div>
+                <div class="pillar-row">
+                    <span class="pillar-icon"><i data-lucide="diamond"></i></span>
+                    <div class="pillar-text"><strong>Quality</strong>Meticulous attention to detail in every standard.</div>
+                </div>
+                <div class="pillar-row">
+                    <span class="pillar-icon"><i data-lucide="leaf"></i></span>
+                    <div class="pillar-text"><strong>Sustainability</strong>Prioritizing eco-friendly practices in packaging.</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Company Overview -->
-    <section class="about-section">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>Our Mission</h2>
-                    <p>Dewise Drink Solutions is a consulting and trading firm specializing in providing comprehensive beverage solutions. Our mission is to guide clients through every stage of beverage creation, from initial concept development to the final bottled product.</p>
-                    
-                    <p>With a strong foundation in the beverage industry and a commitment to innovation, quality, and sustainability, we deliver tailored solutions that meet the unique needs of our clients.</p>
-                    
-                    <h2 style="margin-top: 2rem;">Core Values</h2>
-                    <ul style="margin-bottom: 1.5rem;">
-                        <li><strong>Innovation:</strong> We thrive on creating unique and market-leading beverage concepts.</li>
-                        <li><strong>Quality:</strong> Our meticulous attention to detail ensures the highest standards in every project.</li>
-                        <li><strong>Sustainability:</strong> We prioritize eco-friendly practices in product development and packaging.</li>
-                        <li><strong>Client Satisfaction:</strong> Our success is measured by the success of our clients.</li>
-                    </ul>
-                </div>
-                <div class="about-image">
-                    <img src="images/company-mission.jpg" alt="Company Mission" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius);">
-                </div>
+    <!-- Leadership Section -->
+    <section id="services" class="reveal">
+        <div class="services-layout">
+            <div class="services-left">
+                <div class="section-rule"></div>
+                <div class="sec-tag">Leadership</div>
+                <h2 class="sec-title">The Minds <em>Behind</em> Dewise</h2>
+                <p class="sec-sub">Combining engineering precision with sommelier expertise to create world-class beverages.</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section class="services-overview">
-        <div class="container">
-            <h2 style="text-align: center; margin-bottom: 3rem;">Our Leadership Team</h2>
             <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">👨‍💼</div>
-                    <h3>Nagesh Pai</h3>
-                    <p>Founder</p>
-                    <p>Master of Science in Mechanical Engineering from New Jersey Institute of Technology with extensive experience in setting up fruit wineries. Proven track record of launching successful beverage brands.</p>
+                <div class="service-item">
+                    <div class="leader-image-wrap">
+                        <img src="images/leader-nagesh.jpg" alt="Nagesh Pai" onerror="this.src='https://via.placeholder.com/300x400?text=Nagesh+Pai'">
+                    </div>
+                    <h3 class="svc-title">Nagesh Pai</h3>
+                    <p class="svc-num">Founder</p>
+                    <p class="svc-desc">Master of Science in Mechanical Engineering (NJIT). Extensive experience in setting up fruit wineries and launching successful beverage brands.</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">👩‍💼</div>
-                    <h3>Priyanka Save</h3>
-                    <p>Co-founder</p>
-                    <p>Certified Sommelier from Wine and Spirit Education Trust, London. Vice President of All India Wine Producers Association. Expert in wine production and training.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Achievements -->
-    <section class="about-section">
-        <div class="container">
-            <h2 style="text-align: center; margin-bottom: 3rem;">Our Achievements</h2>
-            <div class="about-content" style="grid-template-columns: 1fr;">
-                <div class="about-text">
-                    <ul style="list-style-type: disc; margin-left: 2rem; margin-bottom: 2rem;">
-                        <li>Successfully launched Fruzzante, the world's first chikoo wine in 2016, winning a silver medal competing against 145 fruit wines in USA</li>
-                        <li>Co-founded Himachal Nectars Pvt Ltd, focusing on fruit wine production in Himachal Pradesh</li>
-                        <li>Appointed as Fruit Wine Ambassador for the state of Meghalaya</li>
-                        <li>Appointed as Technical Adviser for the Meghalaya Farmers Empowerment Commission's winery projects</li>
-                    </ul>
-                    
-                    <h3 style="margin-top: 2rem;">Notable Projects</h3>
-                    <p>Our work spans across various beverage categories including the development of Bear (Strong Cider Brand), Majesty (Everyday Drinking Red Wine), and ongoing projects for non-alcoholic beverages for the USA market.</p>
+                <div class="service-item">
+                    <div class="leader-image-wrap">
+                        <img src="images/leader-priyanka.jpg" alt="Priyanka Save" onerror="this.src='https://via.placeholder.com/300x400?text=Priyanka+Save'">
+                    </div>
+                    <h3 class="svc-title">Priyanka Save</h3>
+                    <p class="svc-num">Co-founder</p>
+                    <p class="svc-desc">Certified Sommelier (WSET, London). Vice President of All India Wine Producers Association. Expert in wine production and technical training.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <h2>Learn More About Our Expertise</h2>
-            <p>Discover how our experience can help bring your beverage concept to life.</p>
-            <a href="services.html" class="btn btn-primary">Explore Our Services</a>
+    <!-- Achievements Section -->
+    <section id="why" class="reveal">
+        <div class="why-layout">
+            <div class="why-left">
+                <div class="section-rule"></div>
+                <div class="sec-tag">Milestones</div>
+                <h2 class="sec-title">Our <em>Achievements</em></h2>
+            </div>
+            <div class="why-list">
+                <div class="why-item">
+                    <div class="why-item-head">
+                        <span class="why-item-num">2016</span>
+                        <span class="why-item-arrow">→</span>
+                    </div>
+                    <h3 class="why-item-title">World's First Chikoo Wine</h3>
+                    <p class="why-item-desc">Successfully launched Fruzzante, winning a silver medal against 145 fruit wines in the USA.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-item-head">
+                        <span class="why-item-num">Ongoing</span>
+                        <span class="why-item-arrow">→</span>
+                    </div>
+                    <h3 class="why-item-title">Fruit Wine Ambassador</h3>
+                    <p class="why-item-desc">Appointed as Fruit Wine Ambassador for Meghalaya and Technical Adviser for the Farmers Empowerment Commission.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-item-head">
+                        <span class="why-item-num">Global Reach</span>
+                        <span class="why-item-arrow">→</span>
+                    </div>
+                    <h3 class="why-item-title">Notable Brands</h3>
+                    <p class="why-item-desc">Developed Bear (Strong Cider), Majesty (Red Wine), and various non-alcoholic beverages for the USA market.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="cta" class="reveal">
+        <div class="cta-content">
+            <h2 class="cta-title">Explore our <em>expertise</em></h2>
+            <p class="cta-sub">Discover how our experience can help bring your beverage concept to life with professional consultation.</p>
+            <div class="cta-actions">
+                <a href="services.html" class="btn-dark">Our Services</a>
+                <a href="contact.html" class="btn-outline">Contact Us</a>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>DEWISE</h3>
-                    <p>Comprehensive beverage solutions from concept to commercialization.</p>
-                    
-                </div>
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="services.html">Concept Development</a></li>
-                        <li><a href="services.html">Recipe Development</a></li>
-                        <li><a href="services.html">Commercial Production</a></li>
-                        <li><a href="services.html">Consulting & Training</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li>Email: dewisedrinksolutions@gmail.com</li>
-                        <li>Phone: +91 9819243345</li>
-                        <li>Address: 16 Kawasji Chawl, Near State Bank of India, Dahanu Road west, Maharashtra -401602</li>
-                    </ul>
-                </div>
+        <div class="footer-top">
+            <div class="footer-col-main">
+                <div class="footer-logo">DEWISE<em> Solutions</em></div>
+                <p class="footer-tagline">Comprehensive beverage solutions from concept to commercialisation.</p>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 Dewise Drink Solutions. All rights reserved.</p>
+            <div class="footer-col">
+                <div class="footer-col-head">Navigation</div>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </div>
+            <div class="footer-col">
+                <div class="footer-col-head">Address</div>
+                <p class="footer-tagline">16 Kawasji Chawl, State Bank of India, Dahanu Road West, MH 401602</p>
+            </div>
+            <div class="footer-col">
+                <div class="footer-col-head">Contact</div>
+                <ul class="footer-links">
+                    <li>+91 9819243345</li>
+                    <li>dewisedrinksolutions@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-copy">&copy; 2023 Dewise Drink Solutions. All rights reserved.</div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+            console.log("Lucide icons initialized from about.html");
+        }
+    </script>
 </body>
 </html>

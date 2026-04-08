@@ -3,203 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dewise Drink Solutions | Beverage Innovation & Consulting</title>
-    <meta name="description" content="Dewise Drink Solutions provides comprehensive beverage solutions from concept development to commercial production.">
+    <title>Dewise Drink Solutions | Concept to Commercialisation</title>
+    <meta name="description" content="Comprehensive beverage consulting and trading firm. Specialist in beverage creation, from initial concept development to final bottled products.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header/Navigation -->
-    <header>
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="logo">
-                    <a href="index.html">DEWISE</a>
-                </div>
-                <div class="nav-menu" id="nav-menu">
-                    <a href="index.html" class="nav-link active">Home</a>
-                    <a href="about.html" class="nav-link">About</a>
-                    <a href="services.html" class="nav-link">Services</a>
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </div>
-                <div class="hamburger" id="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div>
-        </nav>
-    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" class="nav-logo">DEWISE<span>Drink Solutions</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="nav-cta">Inquire Now</a>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </div>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1>Comprehensive Beverage Solutions</h1>
-                <p>Dewise Drink Solutions guides clients through every stage of beverage creation, from initial concept development to the final bottled product.</p>
-                <div class="hero-buttons">
-                    <a href="services.html" class="btn btn-primary">Our Services</a>
-                    <a href="about.html" class="btn btn-secondary">Learn More</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="images/beverage-concept.jpg" alt="Beverage Concept Development" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius);">
-            </div>
+    <section id="hero">
+        <div class="hero-ruled-lines"></div>
+        <div class="hero-col-line"></div>
+        
+        <div class="hero-meta">
+            <div class="hero-meta-item">ESTD 2023</div>
+            <div class="hero-meta-item">BEVERAGE CONSULTING</div>
+            <div class="hero-meta-item">TRADING SOLUTIONS</div>
         </div>
-    </section>
 
-    <!-- Services Overview -->
-    <section class="services-overview">
         <div class="container">
-            <h2>Our Core Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">🎨</div>
-                    <h3>Concept Development</h3>
-                    <p>Transform ideas into market-ready products with innovative beverage concepts that resonate with target audiences.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🔬</div>
-                    <h3>Recipe Development</h3>
-                    <p>Expert recipe development ensuring delicious, scalable beverages that meet specific goals and regulatory requirements.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🏭</div>
-                    <h3>Commercial Production</h3>
-                    <p>Scale up from small batches to large-scale manufacturing with consistency in quality and compliance.</p>
+            <div class="hero-tag">
+                <div class="hero-tag-dot"></div>
+                Integrated Solutions
+            </div>
+            <h1 class="hero-title">
+                From <em>Concept</em><br>
+                to <span class="sketch-underline">Commercialisation
+                    <svg viewBox="0 0 400 12"><path d="M4,8 c100,0 200,-4 392,-2" /></svg>
+                </span>
+            </h1>
+            
+            <div class="hero-bottom">
+                <p class="hero-desc">
+                    Specialising in providing comprehensive beverage solutions. We guide clients through every stage of beverage creation, from initial concept development to the final bottled product.
+                </p>
+                <div class="hero-actions">
+                    <a href="services.html" class="btn-dark">Explore Services</a>
+                    <a href="about.html" class="btn-outline">Our Story</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about-section">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>About Dewise Drink Solutions</h2>
-                    <p>We are a consulting and trading firm specializing in comprehensive beverage solutions. Our mission is to guide clients through every stage of beverage creation, from initial concept development to the final bottled product.</p>
-                    <p>With a strong foundation in the beverage industry and a commitment to innovation, quality, and sustainability, we deliver tailored solutions that meet the unique needs of our clients.</p>
-                    <a href="about.html" class="btn btn-outline">Learn More About Us</a>
-                </div>
-                <div class="about-image">
-                    <img src="images/company-overview.jpg" alt="Dewise Drink Solutions Overview" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius);">
-                </div>
-            </div>
+    <!-- Ticker -->
+    <div class="ticker-band">
+        <div class="ticker-inner">
+            <div class="ticker-item">Concept Development<span class="ticker-sep"></span></div>
+            <div class="ticker-item">Recipe Formulation<span class="ticker-sep"></span></div>
+            <div class="ticker-item">Commercial Production<span class="ticker-sep"></span></div>
+            <div class="ticker-item">Training & Consulting<span class="ticker-sep"></span></div>
+            <div class="ticker-item">Trading & Equipment<span class="ticker-sep"></span></div>
+            <!-- Repeat for infinite loop -->
+            <div class="ticker-item">Concept Development<span class="ticker-sep"></span></div>
+            <div class="ticker-item">Recipe Formulation<span class="ticker-sep"></span></div>
+            <div class="ticker-item">Commercial Production<span class="ticker-sep"></span></div>
+            <div class="ticker-item">Training & Consulting<span class="ticker-sep"></span></div>
+            <div class="ticker-item">Trading & Equipment<span class="ticker-sep"></span></div>
         </div>
-    </section>
+    </div>
 
     <!-- Stats Section -->
-    <section class="stats-section">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <h3>15+</h3>
-                    <p>Beverage Brands Launched</p>
+    <section id="stats">
+        <div class="stat-cell">
+            <div class="stat-n"><span data-target="15">0</span><sup>+</sup></div>
+            <div class="stat-l">Years Experience</div>
+        </div>
+        <div class="stat-cell">
+            <div class="stat-n"><span data-target="150">0</span><sup>+</sup></div>
+            <div class="stat-l">Fruit Wines Scaled</div>
+        </div>
+        <div class="stat-cell">
+            <div class="stat-n"><span data-target="1200">0</span></div>
+            <div class="stat-l">Liters Daily Capacity</div>
+        </div>
+        <div class="stat-cell">
+            <div class="stat-n"><span data-target="100">0</span><sup>%</sup></div>
+            <div class="stat-l">Client Satisfaction</div>
+        </div>
+    </section>
+
+    <!-- Services Summary -->
+    <section id="services" class="reveal">
+        <div class="services-layout">
+            <div class="services-left">
+                <div class="section-rule"></div>
+                <div class="sec-tag">
+                    <span class="sec-tag-num">01</span>
+                    Core Capabilities
                 </div>
-                <div class="stat-item">
-                    <h3>290+</h3>
-                    <p>People Trained</p>
+                <h2 class="sec-title">Tailored Beverage <em>Solutions</em></h2>
+                <p class="sec-sub">Our mission is to guide you through every nuance of beverage creation, ensuring quality, sustainability, and market leadership.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-item">
+                    <span class="svc-num">01</span>
+                    <span class="svc-icon"><i data-lucide="flask-conical"></i></span>
+                    <h3 class="svc-title">Recipe Development</h3>
+                    <p class="svc-desc">Expert creation of unique recipes for alcoholic and non-alcoholic beverages.</p>
                 </div>
-                <div class="stat-item">
-                    <h3>8+</h3>
-                    <p>Years Experience</p>
+                <div class="service-item">
+                    <span class="svc-num">02</span>
+                    <span class="svc-icon"><i data-lucide="factory"></i></span>
+                    <h3 class="svc-title">Commercial Production</h3>
+                    <p class="svc-desc">Technical setup and optimization of production lines for any scale.</p>
                 </div>
-                <div class="stat-item">
-                    <h3>50+</h3>
-                    <p>Projects Completed</p>
+                <div class="service-item">
+                    <span class="svc-num">03</span>
+                    <span class="svc-icon"><i data-lucide="graduation-cap"></i></span>
+                    <h3 class="svc-title">Training & Consulting</h3>
+                    <p class="svc-desc">Certified training in wine production and spirit education.</p>
+                </div>
+                <div class="service-item">
+                    <span class="svc-num">04</span>
+                    <span class="svc-icon"><i data-lucide="globe"></i></span>
+                    <h3 class="svc-title">Trading & Sourcing</h3>
+                    <p class="svc-desc">Sourcing premium equipment and raw materials from across the globe.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <div class="container">
-            <h2>What Our Clients Say</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"Dewise Drink Solutions transformed our beverage concept into a successful commercial product. Their expertise in recipe development and production scaling was invaluable."</p>
-                        <div class="testimonial-author">
-                            <h4>Client Name</h4>
-                            <p>Beverage Company</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"The training program provided by Dewise helped our team develop expertise in commercial wine production. Their hands-on approach made all the difference."</p>
-                        <div class="testimonial-author">
-                            <h4>Participant</h4>
-                            <p>Winery Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"Dewise's feasibility studies and consulting services helped us make informed decisions for our beverage manufacturing unit. Their insights were crucial to our success."</p>
-                        <div class="testimonial-author">
-                            <h4>Project Manager</h4>
-                            <p>Distillery Setup</p>
-                        </div>
-                    </div>
-                </div>
+    <!-- Call to Action -->
+    <section id="cta" class="reveal">
+        <div class="cta-bg-text">DEWISE</div>
+        <div class="cta-content">
+            <h2 class="cta-title">Ready to launch your <em>vision?</em></h2>
+            <p class="cta-sub">Join the portfolio of successful brands that we've helped build from the ground up.</p>
+            <div class="cta-actions">
+                <a href="contact.html" class="btn-dark">Start a Project</a>
+                <a href="services.html" class="btn-outline">View Details</a>
             </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <h2>Ready to Launch Your Beverage Brand?</h2>
-            <p>Let's discuss how we can help you create your next successful beverage product with our comprehensive solutions.</p>
-            <a href="contact.html" class="btn btn-primary">Get in Touch</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>DEWISE</h3>
-                    <p>Comprehensive beverage solutions from concept to commercialization.</p>
-                    
+        <div class="footer-top">
+            <div class="footer-col-main">
+                <div class="footer-logo">DEWISE<em> Solutions</em></div>
+                <p class="footer-tagline">Comprehensive beverage solutions from concept to commercialisation.</p>
+                <div class="footer-contact-row">
+                    <span class="footer-contact-icon"><i data-lucide="map-pin"></i></span>
+                    16 Kawasji Chawl, Dahanu Road West, MH 401602
                 </div>
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="#">Concept Development</a></li>
-                        <li><a href="#">Recipe Development</a></li>
-                        <li><a href="#">Commercial Production</a></li>
-                        <li><a href="#">Consulting & Training</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li>Email: dewisedrinksolutions@gmail.com</li>
-                        <li>Phone: +91 9819243345</li>
-                        <li>Address: 16 Kawasji Chawl, Near State Bank of India, Dahanu Road west, Maharashtra -401602</li>
-                    </ul>
+                <div class="footer-contact-row">
+                    <span class="footer-contact-icon"><i data-lucide="mail"></i></span>
+                    dewisedrinksolutions@gmail.com
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 Dewise. All rights reserved.</p>
+            <div class="footer-col">
+                <div class="footer-col-head">Navigation</div>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </div>
+            <div class="footer-col">
+                <div class="footer-col-head">Expertise</div>
+                <ul class="footer-links">
+                    <li><a href="services.html">Recipe Design</a></li>
+                    <li><a href="services.html">Production Setup</a></li>
+                    <li><a href="services.html">Winery Planning</a></li>
+                    <li><a href="services.html">Training</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <div class="footer-col-head">Legal</div>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-copy">&copy; 2023 Dewise Drink Solutions. All rights reserved.</div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Emergency re-init for Lucide icons if script.js didn't catch them
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+            console.log("Lucide icons initialized from index.html");
+        }
+    </script>
 </body>
 </html>

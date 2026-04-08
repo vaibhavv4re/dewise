@@ -4,182 +4,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Dewise Drink Solutions</title>
-    <meta name="description" content="Get in touch with Dewise Drink Solutions for comprehensive beverage solutions and consulting services.">
+    <meta name="description" content="Get in touch with Dewise Drink Solutions for beverage consulting, recipe development, and equipment inquiries.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Specific contact form styles to match premium feel */
+        .contact-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; padding: 7rem 5%; border-bottom: 1px solid var(--rule); }
+        .contact-form { display: flex; flex-direction: column; gap: 1.5rem; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+        .form-group { display: flex; flex-direction: column; gap: 0.5rem; }
+        .form-group label { font-family: var(--mono); font-size: 0.65rem; color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.1em; }
+        .form-group input, .form-group textarea { 
+            background: none; border: 1px solid var(--rule); padding: 0.8rem; 
+            font-family: var(--sans); font-size: 0.9rem; color: var(--ink);
+            transition: border-color 0.3s;
+        }
+        .form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--ink); }
+        @media (max-width: 900px) { .contact-layout { grid-template-columns: 1fr; } }
+    </style>
 </head>
 <body>
-    <!-- Header/Navigation -->
-    <header>
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="logo">
-                    <a href="index.html">DEWISE</a>
-                </div>
-                <div class="nav-menu" id="nav-menu">
-                    <a href="index.html" class="nav-link">Home</a>
-                    <a href="about.html" class="nav-link">About</a>
-                    <a href="services.html" class="nav-link">Services</a>
-                    <a href="contact.html" class="nav-link active">Contact</a>
-                </div>
-                <div class="hamburger" id="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div>
-        </nav>
-    </header>
 
-    <!-- Contact Hero Section -->
-    <section class="hero" style="padding: 120px 0 80px; min-height: auto;">
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" class="nav-logo">DEWISE<span>Drink Solutions</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="nav-cta">Inquire Now</a>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" style="min-height: 50vh;">
+        <div class="hero-ruled-lines"></div>
         <div class="container">
-            <div class="hero-content">
-                <h1>Get in Touch With Us</h1>
-                <p>Reach out to discuss your beverage project and discover how we can help bring your vision to life.</p>
+            <div class="hero-tag">
+                <div class="hero-tag-dot"></div>
+                Get In Touch
             </div>
+            <h1 class="hero-title">
+                Start your <em>Journey</em><br>
+                with <span class="sketch-underline">Dewise
+                    <svg viewBox="0 0 400 12"><path d="M4,8 c100,0 200,-4 392,-2" /></svg>
+                </span>
+            </h1>
         </div>
     </section>
 
-    <!-- Contact Information -->
-    <section class="about-section">
-        <div class="container">
-            <h2 style="text-align: center; margin-bottom: 3rem;">Contact Information</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Our Location</h3>
-                    <p>16 Kawasji Chawl, Near State Bank of India, Dahanu Road west, Maharashtra -401602</p>
-                    
-                    <h3 style="margin-top: 2rem;">Contact Details</h3>
-                    <p>Email: <a href="mailto:dewisedrinksolutions@gmail.com">dewisedrinksolutions@gmail.com</a></p>
-                    <p>Phone: <a href="tel:+919819243345">+91 9819243345</a></p>
-                    
-                    <h3 style="margin-top: 2rem;">Business Hours</h3>
-                    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                    <p>Saturday: 10:00 AM - 4:00 PM</p>
-                    <p>Sunday: Closed</p>
+    <!-- Contact Content -->
+    <section class="contact-layout reveal">
+        <div class="contact-info">
+            <div class="section-rule"></div>
+            <div class="sec-tag">Collaboration</div>
+            <h2 class="sec-title" style="margin-bottom: 2rem;">Let's discuss your <em>Project</em></h2>
+            
+            <div class="about-pillars">
+                <div class="pillar-row">
+                    <span class="pillar-icon"><i data-lucide="map-pin"></i></span>
+                    <div class="pillar-text"><strong>Our Office</strong>16 Kawasji Chawl, Near State Bank of India, Dahanu Road west, Maharashtra - 401602</div>
                 </div>
-                <div class="about-image">
-                    <img src="images/location-map.jpg" alt="Dewise Drink Solutions Location" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius);">
+                <div class="pillar-row">
+                    <span class="pillar-icon"><i data-lucide="mail"></i></span>
+                    <div class="pillar-text"><strong>Email Us</strong>dewisedrinksolutions@gmail.com</div>
+                </div>
+                <div class="pillar-row">
+                    <span class="pillar-icon"><i data-lucide="phone"></i></span>
+                    <div class="pillar-text"><strong>Call Us</strong>+91 9819243345</div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Contact Form -->
-    <section class="services-overview">
-        <div class="container">
-            <h2 style="text-align: center; margin-bottom: 3rem;">Send Us a Message</h2>
-            <div class="contact-form-container" style="max-width: 700px; margin: 0 auto; background: white; padding: 2rem; border-radius: var(--radius); box-shadow: var(--shadow);">
-                <form id="contactForm">
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
-                        <div>
-                            <label for="firstName" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">First Name</label>
-                            <input type="text" id="firstName" name="firstName" required style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: var(--radius); font-size: 1rem;">
-                        </div>
-                        <div>
-                            <label for="lastName" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Last Name</label>
-                            <input type="text" id="lastName" name="lastName" required style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: var(--radius); font-size: 1rem;">
-                        </div>
-                    </div>
-                    <div style="margin-bottom: 1.5rem;">
-                        <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Email Address</label>
-                        <input type="email" id="email" name="email" required style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: var(--radius); font-size: 1rem;">
-                    </div>
-                    <div style="margin-bottom: 1.5rem;">
-                        <label for="phone" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: var(--radius); font-size: 1rem;">
-                    </div>
-                    <div style="margin-bottom: 1.5rem;">
-                        <label for="service" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Service Interested In</label>
-                        <select id="service" name="service" required style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: var(--radius); font-size: 1rem;">
-                            <option value="">Select a service</option>
-                            <option value="concept">Concept Development</option>
-                            <option value="recipe">Recipe Development</option>
-                            <option value="production">Commercial Production</option>
-                            <option value="consulting">Consulting</option>
-                            <option value="training">Training</option>
-                            <option value="feasibility">Feasibility Studies</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    <div style="margin-bottom: 1.5rem;">
-                        <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Message</label>
-                        <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: var(--radius); font-size: 1rem;"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
-                </form>
+        <form class="contact-form" id="contactForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" name="name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" name="email" placeholder="john@example.com" required>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <h2>Ready to Start Your Beverage Journey?</h2>
-            <p>Our experts are ready to help you bring your beverage concept to life.</p>
-            <a href="services.html" class="btn btn-primary">Explore Our Services</a>
-        </div>
+            <div class="form-group">
+                <label>Industry / Product Type</label>
+                <input type="text" name="industry" placeholder="e.g. Fruit Wine, Craft Beer">
+            </div>
+            <div class="form-group">
+                <label>Message</label>
+                <textarea name="message" rows="5" placeholder="Tell us about your project goals..." required></textarea>
+            </div>
+            <div id="formStatus" class="form-status"></div>
+            <button type="submit" class="btn-dark" style="border: none; cursor: pointer; align-self: flex-start;">Send Inquiry</button>
+        </form>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>DEWISE</h3>
-                    <p>Comprehensive beverage solutions from concept to commercialization.</p>
-                    
-                </div>
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="services.html">Concept Development</a></li>
-                        <li><a href="services.html">Recipe Development</a></li>
-                        <li><a href="services.html">Commercial Production</a></li>
-                        <li><a href="services.html">Consulting & Training</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li>Email: dewisedrinksolutions@gmail.com</li>
-                        <li>Phone: +91 9819243345</li>
-                        <li>Address: 16 Kawasji Chawl, Near State Bank of India, Dahanu Road west, Maharashtra -401602</li>
-                    </ul>
-                </div>
+        <div class="footer-top">
+            <div class="footer-col-main">
+                <div class="footer-logo">DEWISE<em> Solutions</em></div>
+                <p class="footer-tagline">Comprehensive beverage solutions from concept to commercialisation.</p>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 Dewise Drink Solutions. All rights reserved.</p>
+            <div class="footer-col">
+                <div class="footer-col-head">Navigation</div>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </div>
+            <div class="footer-col">
+                <div class="footer-col-head">Global Trade</div>
+                <p class="footer-tagline">Operating across India and sourcing globally for premium beverage standards.</p>
+            </div>
+            <div class="footer-col">
+                <div class="footer-col-head">Legal</div>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-copy">&copy; 2023 Dewise Drink Solutions. All rights reserved.</div>
         </div>
     </footer>
 
     <script src="script.js"></script>
     <script>
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(this);
-            
-            // In a real application, you would send the data to a server here
-            console.log('Form submitted with data:', Object.fromEntries(formData));
-            
-            // Show success message
-            alert('Thank you for your message! We will get back to you soon.');
-            
-            // Reset form
-            this.reset();
-        });
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+            console.log("Lucide icons initialized from contact.html");
+        }
     </script>
 </body>
 </html>
