@@ -1,20 +1,33 @@
 const EQUIP_DATA = [
-    { name: 'Fermentation Tank', spec: '200 L – 50,000 L', desc: 'SS 304 stainless steel tanks for red wine, white wine, and fruit wine. Advanced temperature control systems optimise fermentation. Easy to sanitise, built for longevity.', src: '/images/equip-0.jpg' },
-    { name: 'Pneumatic Press', spec: '1,000 – 5,000 kg/hr', desc: 'Large-scale grape pneumatic press for high-volume processing. Minimises oxidation and seed tannin extraction for the cleanest, freshest juice possible.', src: '/images/equip-1.jpg' },
-    { name: 'Basket Press', spec: '20 – 500 kg per batch', desc: 'Gentle grape and fruit juice extraction for boutique operations. Preserves delicate flavour characteristics while delivering high yields with minimal oxidation.', src: '/images/equip-2.jpg' },
-    { name: 'Grape Stemmer + Mono Pump', spec: '500 – 2,000 kg/hr', desc: 'Efficient grape stemming with integrated mono pump for gentle fruit transfer. Reduces manual handling and preserves the integrity of the grape at scale.', src: '/images/equip-3.jpg' },
-    { name: 'Dual Temperature Chiller', spec: 'Hot & Cold Climate', desc: 'Engineered to work in both extreme hot and cold climates. Capacity designed based on number of connected fermentation tanks — fully scalable cooling.', src: '/images/equip-4.jpg' },
-    { name: 'Plate & Frame Filter', spec: '20×20 to 40×40 sizes', desc: 'High-performance filtration ensuring clarity and purity in the final product. Multiple size options accommodate varying production volumes with consistent results.', src: '/images/equip-5.jpg' },
-    { name: 'Cartridge Filter (Trolley)', spec: 'Series-mounted system', desc: 'Mobile trolley-mounted cartridge filter system. Series configuration delivers superior filtration clarity at the final stage before bottling.', src: '/images/equip-6.jpg' },
-    { name: 'Plate Filter', spec: 'Multi-stage filtration', desc: 'Precision plate filtration for intermediate and finishing stages. Removes impurities while retaining the desired flavours, aromas, and wine character.', src: '/images/equip-7.jpg' },
-    { name: 'Bottling Machine', spec: '4-head still wine', desc: 'Four-head still wine bottling machine designed for precision and speed. Accommodates various bottle sizes and ensures a perfect airtight seal every time.', src: '/images/equip-8.jpg' },
-    { name: 'Screw Capping Machine', spec: 'Single head, semi-auto', desc: 'Reliable single-head semi-automatic screw capping for consistent cap application. Ideal for boutique and mid-scale production runs.', src: '/images/equip-9.jpg' },
-    { name: 'Automatic Labelling', spec: 'High-speed precision', desc: 'Automated label application for consistent brand presentation. Compatible with multiple bottle formats and label types for retail-ready finishing.', src: '/images/equip-10.jpg' },
-    { name: 'Fruit Milling Machine', spec: 'Multi-fruit compatible', desc: 'Industrial fruit milling for efficient pre-fermentation processing. Compatible with a wide range of fruits to support diverse beverage applications.', src: '/images/equip-11.jpg' },
-    { name: 'Fruit De-Stoner', spec: 'High-volume processing', desc: 'Automated stone and seed removal for stone fruits. Ensures clean pulp yield and protects downstream equipment from damage during high-volume production.', src: '/images/equip-12.jpg' },
-    { name: 'Chemical Mixing Machine', spec: 'Precision formulation', desc: 'Accurate chemical and additive mixing for SO₂ dosing, fining agents, and nutrient additions. Ensures consistent, repeatable results batch after batch.', src: '/images/equip-13.jpg' },
-    { name: 'Centrifugal Pump (VFD)', spec: 'Variable frequency drive', desc: 'Centrifugal pumps with optional VFD fitting for precise flow control and energy efficiency. Suitable for must, wine, and all process fluid transfers.', src: '/images/equip-14.jpg' },
-    { name: 'Winery Laboratory', spec: 'Full analytical setup', desc: 'Complete winery laboratory setup for pH, SO₂, alcohol and acid testing. Enables in-house quality control at every stage from must to finished wine.', src: '/images/equip-15.jpg' }
+    { name: 'Fermentation Tank', spec: '200 L – 50,000 L', desc: 'SS 304 stainless steel tanks for red wine, white wine, and fruit wine. Advanced temperature control systems optimise fermentation. Easy to sanitise, built for longevity.', src: 'images/equip-0.jpg' },
+    { name: 'Pneumatic Press', spec: '1,000 – 5,000 kg/hr', desc: 'Large-scale grape pneumatic press for high-volume processing. Minimises oxidation and seed tannin extraction for the cleanest, freshest juice possible.', src: 'images/equip-1.jpg' },
+    { name: 'Basket Press', spec: '20 – 500 kg per batch', desc: 'Gentle grape and fruit juice extraction for boutique operations. Preserves delicate flavour characteristics while delivering high yields with minimal oxidation.', src: 'images/equip-2.jpg' },
+    { name: 'Grape Stemmer + Mono Pump', spec: '500 – 2,000 kg/hr', desc: 'Efficient grape stemming with integrated mono pump for gentle fruit transfer. Reduces manual handling and preserves the integrity of the grape at scale.', src: 'images/equip-3.jpg' },
+    { name: 'Dual Temperature Chiller', spec: 'Hot & Cold Climate', desc: 'Engineered to work in both extreme hot and cold climates. Capacity designed based on number of connected fermentation tanks — fully scalable cooling.', src: 'images/equip-4.jpg' },
+    { name: 'Plate & Frame Filter', spec: '20×20 to 40×40 sizes', desc: 'High-performance filtration ensuring clarity and purity in the final product. Multiple size options accommodate varying production volumes with consistent results.', src: 'images/equip-5.jpg' },
+    { name: 'Cartridge Filter (Trolley)', spec: 'Series-mounted system', desc: 'Mobile trolley-mounted cartridge filter system. Series configuration delivers superior filtration clarity at the final stage before bottling.', src: 'images/equip-6.jpg' },
+    { name: 'Plate Filter', spec: 'Multi-stage filtration', desc: 'Precision plate filtration for intermediate and finishing stages. Removes impurities while retaining the desired flavours, aromas, and wine character.', src: 'images/equip-7.jpg' },
+    { name: 'Bottling Machine', spec: '4-head still wine', desc: 'Four-head still wine bottling machine designed for precision and speed. Accommodates various bottle sizes and ensures a perfect airtight seal every time.', src: 'images/equip-8.jpg' },
+    { name: 'Screw Capping Machine', spec: 'Single head, semi-auto', desc: 'Reliable single-head semi-automatic screw capping for consistent cap application. Ideal for boutique and mid-scale production runs.', src: 'images/equip-9.jpg' },
+    { name: 'Automatic Labelling', spec: 'High-speed precision', desc: 'Automated label application for consistent brand presentation. Compatible with multiple bottle formats and label types for retail-ready finishing.', src: 'images/equip-10.jpg' },
+    { name: 'Fruit Milling Machine', spec: 'Multi-fruit compatible', desc: 'Industrial fruit milling for efficient pre-fermentation processing. Compatible with a wide range of fruits to support diverse beverage applications.', src: 'images/equip-11.jpg' },
+    { name: 'Fruit De-Stoner', spec: 'High-volume processing', desc: 'Automated stone and seed removal for stone fruits. Ensures clean pulp yield and protects downstream equipment from damage during high-volume production.', src: 'images/equip-12.jpg' },
+    { name: 'Chemical Mixing Machine', spec: 'Precision formulation', desc: 'Accurate chemical and additive mixing for SO₂ dosing, fining agents, and nutrient additions. Ensures consistent, repeatable results batch after batch.', src: 'images/equip-13.jpg' },
+    { name: 'Centrifugal Pump (VFD)', spec: 'Variable frequency drive', desc: 'Centrifugal pumps with optional VFD fitting for precise flow control and energy efficiency. Suitable for must, wine, and all process fluid transfers.', src: 'images/equip-14.jpg' },
+    { name: 'Winery Laboratory', spec: 'Full analytical setup', desc: 'Complete winery laboratory setup for pH, SO₂, alcohol and acid testing. Enables in-house quality control at every stage from must to finished wine.', src: 'images/equip-15.jpg' }
+];
+
+
+
+const INGREDIENT_DATA = [
+    { name: 'ZYMAFLORE CGN24', spec: 'Yeast | Sparkling wines', desc: 'Saccharomyces cerevisiae yeast selected to enhance fresh, fruit-driven sparkling wine styles with clean aromatics and precise palate definition.', src: 'images/ingredient-catalogue-placeholder.svg' },
+    { name: 'NUTRIFLOW', spec: 'Organic nutrient | Liquid format', desc: '100% yeast-origin liquid nutrient designed for reliable fermentation kinetics, clean metabolism, and easy automated cellar additions.', src: 'images/ingredient-catalogue-placeholder.svg' },
+    { name: 'OENOFEEL', spec: 'Yeast derivative | Mannoprotein-rich', desc: 'Specific inactivated yeast preparation that supports volume, roundness, and structural balance during maturation protocols.', src: 'images/ingredient-catalogue-placeholder.svg' },
+    { name: 'LACTOENOS BERRY Direct', spec: 'Bacteria | Oenococcus oeni', desc: 'Direct inoculation bacteria designed for fresh fruit expression and faster, dependable malolactic fermentation management.', src: 'images/ingredient-catalogue-placeholder.svg' },
+    { name: 'LAFAZYM THIOLS[+]', spec: 'Enzyme | Aromatic expression', desc: 'Enzyme solution formulated to improve volatile thiol release, helping intensify freshness and varietal aromatic clarity.', src: 'images/ingredient-catalogue-placeholder.svg' },
+    { name: 'OENOFINE RedY', spec: 'Fining aid | Red wine fermentation', desc: 'Fermentation fining product that helps build early mouthfeel balance and supports faster market readiness for modern red styles.', src: 'images/ingredient-catalogue-placeholder.svg' },
+    { name: 'TANIN VR COLOR', spec: 'Tannin | Color & structure', desc: 'Winemaking tannin selected for color support and phenolic structure management during fermentation and ageing.', src: 'images/ingredient-catalogue-placeholder.svg' },
+    { name: 'NOBILE FRESH GRANULAR 24M', spec: 'Oak product | Untoasted granular', desc: 'Natural-origin ellagitannin and polysaccharide contribution to support structure, aromatic lift, and ageing framework.', src: 'images/ingredient-catalogue-placeholder.svg' }
 ];
 
 const CONFIG = {
@@ -71,13 +84,16 @@ document.addEventListener('DOMContentLoaded', () => {
         revealObserver.observe(el);
     });
 
-    // --- Dynamic Equipment Grid ---
+    // --- Dynamic Catalog Grid ---
     const equipGrid = document.querySelector('.equip-grid');
-    if (equipGrid) {
-        // Clear existing placeholders if any
-        equipGrid.innerHTML = '';
+    let activeCatalogData = EQUIP_DATA;
 
-        EQUIP_DATA.forEach((data, index) => {
+    function renderCatalogGrid(dataset) {
+        if (!equipGrid) return;
+        equipGrid.innerHTML = '';
+        activeCatalogData = dataset;
+
+        dataset.forEach((data, index) => {
             const card = document.createElement('div');
             card.className = 'equip-card';
             card.setAttribute('data-index', index);
@@ -94,9 +110,30 @@ document.addEventListener('DOMContentLoaded', () => {
             equipGrid.appendChild(card);
             revealObserver.observe(card);
 
-            // Add click listener for modal
             card.addEventListener('click', () => {
                 openEquipModal(index);
+            });
+        });
+    }
+
+    if (equipGrid) renderCatalogGrid(EQUIP_DATA);
+
+    const tabButtons = document.querySelectorAll('.catalog-tab');
+    const ingredientsPdfLink = document.getElementById('ingredientsPdfLink');
+    if (tabButtons.length) {
+        tabButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                tabButtons.forEach(b => {
+                    b.classList.remove('active');
+                    b.setAttribute('aria-selected', 'false');
+                });
+                btn.classList.add('active');
+                btn.setAttribute('aria-selected', 'true');
+                const kind = btn.getAttribute('data-catalog');
+                renderCatalogGrid(kind === 'ingredients' ? INGREDIENT_DATA : EQUIP_DATA);
+                if (ingredientsPdfLink) {
+                    ingredientsPdfLink.classList.toggle('hidden', kind !== 'ingredients');
+                }
             });
         });
     }
@@ -106,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function openEquipModal(index) {
         if (!modalOverlay) return;
-        const data = EQUIP_DATA[index];
+        const data = activeCatalogData[index];
         if (!data) return;
 
         const modalImg = modalOverlay.querySelector('.equip-modal-img img');
