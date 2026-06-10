@@ -30,6 +30,17 @@ const INGREDIENT_DATA = [
     { name: 'NOBILE FRESH GRANULAR 24M', spec: 'Oak product | Untoasted granular', desc: 'Natural-origin ellagitannin and polysaccharide contribution to support structure, aromatic lift, and ageing framework.', src: 'images/ingredient-catalogue-placeholder.svg' }
 ];
 
+const BOTTLING_DATA = [
+    { name: 'Bottle Format Planning', spec: '187 ml to 15 L', desc: 'Selection support across miniatures, standard retail bottles, magnums, and large-format presentations based on product style and market intent.', src: 'images/bottling-format-planning.jpg' },
+    { name: 'Beer & Cider Bottling', spec: '330 ml, 355 ml, 500 ml, 650 ml', desc: 'Packaging guidance for common beer and cider capacities including longneck, stubby, swing-top, bomber, and growler-friendly formats.', src: 'images/bottling-beer-cider.jpg' },
+    { name: 'Wine Bottle Programs', spec: '375 ml, 750 ml, 1.5 L+', desc: 'Advisory on classic wine bottle families such as Bordeaux, Burgundy, sparkling, Provence rose, and premium large-format SKUs.', src: 'images/bottling-wine-programs.jpg' },
+    { name: 'Closure & Capping Match', spec: 'Cork, screw cap, crown, swing top', desc: 'We align the right closure system with bottle finish, product pressure, shelf life goals, and the practical requirements of your bottling line.', src: 'images/bottling-closures-capping.jpg' },
+    { name: 'Neck Finish Compatibility', spec: 'BVS, MCA, cork finish, pry-off', desc: 'Detailed checks for neck finish and cap compatibility to reduce sealing issues, changeover delays, and downstream packing losses.', src: 'images/bottling-neck-finish.jpg' },
+    { name: 'Decorative & Premium Finishes', spec: 'Embossed, frosted, ceramic, UV-reactive', desc: 'Support for presentation-led bottle choices when brand storytelling, premium positioning, or export shelf impact matters.', src: 'images/bottling-decorative-finishes.jpg' },
+    { name: 'Returnable & Industrial Packs', spec: 'One-way, returnable, pressure rated', desc: 'Selection guidance for operationally efficient bottle programs suited to pasteurization, reuse cycles, hot-fill, and logistics realities.', src: 'images/bottling-returnable-industrial.jpg' },
+    { name: 'Line Readiness Review', spec: 'Filling, capping, labelling alignment', desc: 'A practical review of how chosen bottles and closures interact with your filler, capper, labeler, and case-packing workflow before scale-up.', src: 'images/bottling-line-readiness.jpg' }
+];
+
 const CONFIG = {
     emailDestination: 'dewisedrinksolutions@gmail.com',
     formspreeId: 'xykbvwol' // User can update this with their Formspree ID
@@ -120,6 +131,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const tabButtons = document.querySelectorAll('.catalog-tab');
     const ingredientsPdfLink = document.getElementById('ingredientsPdfLink');
+    const bottlingSpotlight = document.getElementById('bottlingSpotlight');
+    const bottlingNote = document.getElementById('bottlingNote');
     if (tabButtons.length) {
         tabButtons.forEach(btn => {
             btn.addEventListener('click', () => {
@@ -130,9 +143,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 btn.classList.add('active');
                 btn.setAttribute('aria-selected', 'true');
                 const kind = btn.getAttribute('data-catalog');
-                renderCatalogGrid(kind === 'ingredients' ? INGREDIENT_DATA : EQUIP_DATA);
+                const dataset = kind === 'ingredients' ? INGREDIENT_DATA : kind === 'bottling' ? BOTTLING_DATA : EQUIP_DATA;
+                renderCatalogGrid(dataset);
                 if (ingredientsPdfLink) {
                     ingredientsPdfLink.classList.toggle('hidden', kind !== 'ingredients');
+                }
+                if (bottlingSpotlight) {
+                    bottlingSpotlight.classList.toggle('hidden', kind !== 'bottling');
+                }
+                if (bottlingNote) {
+                    bottlingNote.classList.toggle('hidden', kind !== 'bottling');
                 }
             });
         });

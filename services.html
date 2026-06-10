@@ -107,6 +107,17 @@
         <div class="catalog-tabs" role="tablist" aria-label="Catalog categories">
             <button class="catalog-tab active" type="button" data-catalog="equipment" role="tab" aria-selected="true">Equipment Catalogue</button>
             <button class="catalog-tab" type="button" data-catalog="ingredients" role="tab" aria-selected="false">Winemaking Ingredients Catalogue</button>
+            <button class="catalog-tab" type="button" data-catalog="bottling" role="tab" aria-selected="false">Bottling &amp; Capping Services</button>
+        </div>
+        <div class="catalog-spotlight hidden" id="bottlingSpotlight">
+            <div class="catalog-spotlight-media">
+                <img src="images/bottling-capping-reference.jpeg" alt="Bottle formats, capacities, and closure reference chart">
+            </div>
+            <div class="catalog-spotlight-copy">
+                <div class="catalog-spotlight-tag">Packaging Support</div>
+                <h3>Bottle format selection, closure matching, and filling-line fit</h3>
+                <p>We help teams align bottle style, fill volume, closure type, and line compatibility before procurement or production scale-up. This keeps the final pack practical for operations and strong for shelf presentation.</p>
+            </div>
         </div>
         <div class="equip-grid">
             <!-- Dynamically populated from EQUIP_DATA in script.js -->
@@ -115,6 +126,9 @@
             <a class="catalog-pdf-link" href="https://www.laffort.com/wp-content/uploads/CT_EN_Laffort_2025.pdf" target="_blank" rel="noopener noreferrer">
                 Explore the extensive Winemaking Ingredients catalogue (PDF)
             </a>
+        </div>
+        <div class="catalog-pdf-link-wrap hidden" id="bottlingNote">
+            <span class="catalog-footnote">Reference visuals shown here guide bottle shape, fill size, and closure decisions for each project.</span>
         </div>
     </section>
 
